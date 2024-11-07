@@ -1,0 +1,18 @@
+public class LinearSearchExample {
+    // Static array to hold the elements
+    public static Integer[] numbers = new Integer[]{10, 20, 30, 40, 50};
+    
+    // Static variable to hold the target value
+    public static Integer target = 30;
+
+    // Method to perform a linear search
+    public static Integer linearSearch() {
+        // Loop through the array to find the target
+        for (Integer i = 0; i < numbers.size(); i++) {
+            if (numbers[i] == target) {
+                return i; // Return the index if target is found
+            }
+        }
+        return -1; // Return -1 if target is not found
+    }
+}
